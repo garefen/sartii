@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+.nav {
+  
+  &__wrapper {
+    // border-bottom: 1px solid $ui-helper-color;
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100px;
+    width: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
