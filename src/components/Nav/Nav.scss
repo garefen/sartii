@@ -2,7 +2,7 @@
 
 .nav {
   background-color: $background-color;
-  height: 70px;
+  height: 100px;
   width: 100vw;
   left: 50%;
   top: 0;
@@ -14,19 +14,71 @@
     max-width: 1140px;
     margin: 0 auto;
     height: 100%;
+    display: none;
+
+    @media (max-width: 1200px) {
+      margin: 0 20px 0;
+    }
+    
+    @media (min-width: 601px) {
+      display: block;
+    }
+  }
+
+  &__hamburguer {
+    display: block;
+    margin: 5px 0 0 5px;
+    cursor: pointer;
+
+    @media (min-width: 601px) {
+      display: none;
+    }
+
+    svg path {
+      fill: $primary-color;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    &--opened {
+      display: block;
+    }
   }
 
   &__links {
-    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 40px;
+
+    &--mobile {
+      align-items: flex-start;
+      flex-direction: column;
+      background-color: $background-color;
+    }
+
+    &--desktop {
+      height: 100%;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 40px;
+    }
   }
 
   &__item {
     text-decoration: none;
-    color: $secondary-text-color;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    
+    &--desktop {
+      color: $secondary-text-color;
+      font-size: 14px;
+    }
+    
+    &--mobile {
+      color: $primary-color;
+      padding: 30px 20px;
+      font-size: 18px;
+    }
 
     &:hover {
       color: $text-color;

@@ -29,6 +29,10 @@
     @media (max-width: 1200px) {
       margin-top: 40px;
     }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -45,8 +49,8 @@
       border: 1px solid $primary-color;
     }
 
-    @media (max-width: 1200px) {
-      // min-width: 250px;
+    @media (max-width: 1000px) {
+      min-width: auto;
     }
   }
 

@@ -9,7 +9,7 @@ function Jobs() {
   }
 
   return (
-    <section id="jobs" className="jobs">
+    <section className="jobs">
       <h3 className="jobs__headline">
         Experiências
       </h3>
