@@ -51,7 +51,7 @@ function Nav() {
       <div className="nav__mobile" ref={mobileNavRef}>
         <div className="nav__links nav__links--mobile">
           <div onClick={() => mobileJumpOnClick(0)} className="nav__item nav__item--mobile">Início</div>
-          <div onClick={() => mobileJumpOnClick(1)} className="nav__item nav__item--mobile">Sobre</div>
+          <div onClick={() => mobileJumpOnClick(0)} className="nav__item nav__item--mobile">Sobre</div>
           <div onClick={() => mobileJumpOnClick(2)} className="nav__item nav__item--mobile">Experiências</div>
           <div onClick={() => mobileJumpOnClick(3)} className="nav__item nav__item--mobile">Serviços</div>
         </div>
@@ -60,7 +60,7 @@ function Nav() {
         {/* Sartii */}
         <div className="nav__links nav__links--desktop">
           <div onClick={() => desktopJumpOnClick(0)} className="nav__item nav__item--desktop">Início</div>
-          <div onClick={() => desktopJumpOnClick(1)} className="nav__item nav__item--desktop">Sobre</div>
+          <div onClick={() => desktopJumpOnClick(0)} className="nav__item nav__item--desktop">Sobre</div>
           <div onClick={() => desktopJumpOnClick(2)} className="nav__item nav__item--desktop">Experiências</div>
           <div onClick={() => desktopJumpOnClick(3)} className="nav__item nav__item--desktop">Serviços</div>
         </div>

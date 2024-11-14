@@ -18,7 +18,7 @@ function Products() {
           </div>
           <div className="products__card">
             <div className="products__title">
-              UI Design
+              UX / UI
             </div>
             <div className="products__description">
               Crio interfaces atraentes e intuitivas, com foco em funcionalidade e design acessível, garantindo que o usuário encontre o que precisa de forma rápida e agradável.
