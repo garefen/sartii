@@ -36,8 +36,14 @@
     height: auto;
     min-height: 100px;
     min-width: 300px;
-    padding: 30px;
+    padding: 20px 30px 40px;
     background: $background-color;
+    border: 1px solid $background-color;
+    transition: 1s;
+
+    &:hover {
+      border: 1px solid $primary-color;
+    }
   }
 
   &__title {

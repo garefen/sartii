@@ -42,7 +42,7 @@ function Jobs() {
               R/GA
             </div>
             <div className="jobs__content__description">
-              Trabalhei como Engenheiro de Software na empresa R/GA, onde atendia clientes nacionais e internacionais como Google, Nike, Bradesco e realizava provas de conceito para apresentar ao time sobre tecnologias novas e tendências.
+              Trabalhei como Engenheiro de Software na empresa R/GA, onde atendia clientes nacionais e internacionais como Google, Nike, Bradesco e participava de pesquisas para apresentar ao time sobre tecnologias novas e tendências.
             </div>
           </div>
         )}
