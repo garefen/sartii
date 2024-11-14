@@ -2,10 +2,11 @@
 
 .jobs {
   max-width: 1140px;
-  margin: 100px auto 200px;
+  margin: 0 auto;
+  padding: 150px 0 200px;
 
   @media (max-width: 1200px) {
-    margin: 100px 40px 150px;
+    margin: 100px 20px 150px;
   }
 
   &__headline {

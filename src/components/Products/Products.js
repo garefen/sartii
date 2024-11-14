@@ -2,7 +2,7 @@ import './Products.scss';
 
 function Products() {
   return (
-    <div className="products">
+    <section id="products" className="products">
       <div className="products__container">
         <h3 className="products__headline">
           Serviços
@@ -26,7 +26,7 @@ function Products() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

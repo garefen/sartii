@@ -2,7 +2,7 @@ import './Hero.scss';
 
 function Hero() {
   return (
-    <div className="hero">
+    <section id='hero' className="hero">
       <div className="hero__wrapper">
         <div className="hero__headline">
           Construindo <span className='hero__headline--emphasis'>soluções digitais</span> eficientes e inclusivas.
@@ -14,7 +14,7 @@ function Hero() {
           Entrar em contato
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 

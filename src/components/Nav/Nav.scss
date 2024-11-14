@@ -1,20 +1,35 @@
 @import '../../variables.scss';
 
 .nav {
-  
+  background-color: $background-color;
+  height: 70px;
+  width: 100vw;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  position: fixed;
+
   &__wrapper {
     // border-bottom: 1px solid $ui-helper-color;
     max-width: 1140px;
     margin: 0 auto;
-    height: 100px;
-    width: 100%;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    position: fixed;
+    height: 100%;
+  }
 
+  &__links {
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: $secondary-text-color;
+
+    &:hover {
+      color: $text-color;
+    }
   }
 }

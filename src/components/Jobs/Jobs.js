@@ -9,7 +9,7 @@ function Jobs() {
   }
 
   return (
-    <div className="jobs">
+    <section id="jobs" className="jobs">
       <h3 className="jobs__headline">
         Experiências
       </h3>
@@ -61,7 +61,7 @@ function Jobs() {
         )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
