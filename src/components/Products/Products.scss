@@ -3,6 +3,10 @@
 .products {
   background: $background-color-secondary;
   padding: 150px 0 100px;
+
+  @media (max-width: 600px) {
+    padding: 100px 0;
+  }
   
   &__container {
     max-width: 1140px;
@@ -10,6 +14,10 @@
     
     @media (max-width: 1200px) {
       margin: 0 20px 150px;
+    }
+
+    @media (max-width: 600px) {
+      margin: 0 20px 50px;
     }
   }
 

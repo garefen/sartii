@@ -9,6 +9,10 @@
     margin: 100px 20px 150px;
   }
 
+  @media (max-width: 600px) {
+    padding: 100px 0 0;
+  }
+
   &__headline {
     text-align: center;
     font-size: 34px;
