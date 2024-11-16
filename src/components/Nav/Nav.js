@@ -1,16 +1,26 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Nav.scss';
+
+const Selectors = {
+  HERO: '.hero',
+  JOBS: '.jobs',
+  PRODUCTS: '.products',
+  ABOUT: '.about'
+}
 
 function Nav() {
   const [isMobileNavOpened, setIsMobileNavOpened] = useState(false);
+  const [jumplinkEls, setJumplinkEls] = useState([]);
   const mobileNavRef = useRef(null);
 
-  const heroEl = document.querySelector('.hero');
-  const jobsEl = document.querySelector('.jobs');
-  const productsEl = document.querySelector('.products');
-  // const aboutEl = document.querySelector('.about');
-
-  const jumplinkEls = [heroEl, jobsEl, jobsEl, productsEl];
+  useEffect(() => {
+    const heroEl = document.querySelector(Selectors.HERO);
+    const aboutEl = document.querySelector(Selectors.ABOUT);
+    const jobsEl = document.querySelector(Selectors.JOBS);
+    const productsEl = document.querySelector(Selectors.PRODUCTS);
+    setJumplinkEls([heroEl, aboutEl, jobsEl, productsEl])
+    console.log(jumplinkEls);
+  }, []);
 
   const desktopJumpOnClick = (index) => {
     if (index === 0) {
@@ -46,7 +56,9 @@ function Nav() {
     }
     
     const element = jumplinkEls[index];
-    element.scrollIntoView({behavior: 'smooth'});
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'});
+    }
   }
 
   return (
@@ -65,7 +77,7 @@ function Nav() {
       </div>
       <div className="nav__mobile" ref={mobileNavRef}>
         <div className="nav__links nav__links--mobile">
-          <div onClick={() => mobileJumpOnClick(0)} className="nav__item nav__item--mobile">Sobre</div>
+          <div onClick={() => mobileJumpOnClick(1)} className="nav__item nav__item--mobile">Sobre mim</div>
           <div onClick={() => mobileJumpOnClick(2)} className="nav__item nav__item--mobile">Experiências</div>
           <div onClick={() => mobileJumpOnClick(3)} className="nav__item nav__item--mobile">Serviços</div>
         </div>
@@ -78,7 +90,7 @@ function Nav() {
           </svg>
         </div>
         <div className="nav__links nav__links--desktop">
-          <div onClick={() => desktopJumpOnClick(0)} className="nav__item nav__item--desktop">Sobre</div>
+          <div onClick={() => desktopJumpOnClick(1)} className="nav__item nav__item--desktop">Sobre mim</div>
           <div onClick={() => desktopJumpOnClick(2)} className="nav__item nav__item--desktop">Experiências</div>
           <div onClick={() => desktopJumpOnClick(3)} className="nav__item nav__item--desktop">Serviços</div>
         </div>

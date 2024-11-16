@@ -23,7 +23,7 @@ function Jobs() {
         {tabActive === 0 && (
           <div className="jobs__content__item">
             <div className="jobs__content__title">
-              Front End Software Engineer
+              Front-End Software Engineer
             </div>
             <div className="jobs__content__company">
               R/GA for Google
@@ -49,7 +49,7 @@ function Jobs() {
         {tabActive === 2 && (
           <div className="jobs__content__item">
             <div className="jobs__content__title">
-              Desenvolvedor Front End Jr.
+              Desenvolvedor Front-End Jr.
             </div>
             <div className="jobs__content__company">
               Enext
