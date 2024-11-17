@@ -13,7 +13,7 @@ function Products() {
               Desenvolvimento
             </div>
             <div className="products__description">
-              Desenvolvo sites institucionais, profissionais, landing pages e portfólios com um foco especial nas melhores práticas de desenvolvimento, acessibilidade e experiência do usuário.
+              Desenvolvimento de sites institucionais, profissionais, landing pages e portfólios com um foco nas melhores práticas de desenvolvimento, acessibilidade e experiência do usuário.
             </div>
           </div>
           <div className="products__card">
@@ -21,7 +21,7 @@ function Products() {
               UX / UI
             </div>
             <div className="products__description">
-              Crio interfaces atraentes e intuitivas, com foco em funcionalidade e design acessível, garantindo que o usuário encontre o que precisa de forma rápida e agradável.
+              Criação de interfaces atraentes e intuitivas, com foco em funcionalidade e design acessível, garantindo que o usuário encontre o que precisa de forma rápida e agradável.
             </div>
           </div>
         </div>

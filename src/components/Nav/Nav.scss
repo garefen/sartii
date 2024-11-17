@@ -101,6 +101,10 @@
       font-size: 18px;
     }
 
+    &--active {
+      color: $text-color;
+    }
+
     &:hover {
       color: $text-color;
     }

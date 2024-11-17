@@ -34,16 +34,18 @@
 
   &__cta {
     padding: 20px 30px;
+    display: block;
+    text-align: center;
     font-size: 18px;
     background: $primary-color;
     color: $text-color;
     border: none;
     border-radius: 4px;
     width: 300px;
-    cursor: pointer;
+    text-decoration: none;
 
     &:hover {
-      
+      background-color: $primary-color-dark;
     }
 
     @media (max-width: 600px) {

@@ -1,0 +1,70 @@
+@import '../../variables.scss';
+
+.contact {
+  padding: 150px 0 200px;
+
+  @media (max-width: 1200px) {
+    padding: 100px 70px 150px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 100px 0px 150px;
+  }
+
+  &__card {
+    max-width: 1140px;
+    margin: 0 auto;
+    background: $background-color-secondary;
+    padding: 60px 28px;
+    border-radius: 20px;
+    
+    @media (max-width: 600px) {
+      border-radius: 0;
+      padding: 48px 28px;
+    }
+  }
+
+  &__headline {
+    font-size: 48px;
+    margin-bottom: 28px;
+    text-align: center;
+    
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    
+    @media (max-width: 600px) {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    text-align: center;
+    color: $secondary-text-color;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  &__cta {
+    display: block;
+    margin: 36px auto 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: $primary-color;
+    border-radius: 4px;
+    color: $text-color;
+    border: none;
+    width: fit-content;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $primary-color-dark;
+    }
+    
+    @media (max-width: 1200px) {
+      margin: 24px auto 0;
+    }
+  }
+}

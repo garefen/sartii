@@ -55,7 +55,7 @@ function Jobs() {
               Enext
             </div>
             <div className="jobs__content__description">
-              Trabalhei como Desenvolvedor Front End na empresa Enext, focado na criação de e-commerces para grandes clientes do mercado nacional.
+              Trabalhei como Desenvolvedor Front-End na empresa Enext, focado na criação de e-commerces para grandes clientes do mercado nacional.
             </div>
           </div>
         )}

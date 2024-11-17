@@ -2,9 +2,10 @@
 
 .about {
   background: $background-color-secondary;
-  padding: 100px 0;
-
+  padding: 150px 0;
+  
   @media (max-width: 600px) {
+    padding: 100px 0;
     margin: 200px 0 0;
   }
   

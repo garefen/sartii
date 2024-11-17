@@ -1,9 +1,10 @@
 import About from '../../components/About/About';
+import Contact from '../../components/Contact/Contact';
 import Hero from '../../components/Hero/Hero';
 import Jobs from '../../components/Jobs/Jobs';
 import Nav from '../../components/Nav/Nav';
 import Products from '../../components/Products/Products';
-import Projects from '../../components/Projects/Projects';
+import Footer from '../../components/Footer/Footer';
 import './Home.scss';
 
 function Home() {
@@ -14,7 +15,8 @@ function Home() {
       <About />
       <Jobs />
       <Products />
-      {/* <Projects /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }

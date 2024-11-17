@@ -10,9 +10,9 @@ function Hero() {
         <div className="hero__description">
         Mais de 5 anos de experiência construindo plataformas com código limpo, escalável e acessível para todos.
         </div>
-        <button className="hero__cta">
+        <a href='https://tripetto.app/run/V1VIVN9C2U' target='_blank' rel="noopener noreferrer" className="hero__cta">
           Entrar em contato
-        </button>
+        </a>
       </div>
     </section>
   );
